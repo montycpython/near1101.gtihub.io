@@ -1,0 +1,314 @@
+{% extends "mijnhuis.html" %}
+{% block title %}Reality{% endblock title %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+    a:visited { text-decoration: none; }
+    a:link { text-decoration: none;
+             color:red;}
+    .Boss {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px red;}
+}
+
+/* Standard syntax*/
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px red;}
+}
+
+
+  </style>
+{% endblock head %}
+{% block content %}
+    <body>
+<!--<input type="checkbox" name="toggle" id="toggle" />
+<label for="toggle"></label>
+
+
+
+<div class="container">
+
+
+ <h1>T&aacute;v</h1>
+ <h2> Click the Open button to see the latest book.</h2>
+
+
+</div>
+
+
+
+
+<div class="message">-->
+    <div>
+        <div class="aside">
+	    <a href="">About Starstruck</a>
+		<p>The <abbr title="Mystic Door Openers">MDO</abbr> was founded in 2000.</p>
+	    </div>
+	    <div class="story">
+	    <div class="header">
+	    <h1> <span class="tightle">"Starstruck."</span> </h1>
+		<img src="{{ url_for('static', filename='visuals/1stsigil.png') }}" class="Nathan"/>
+		<h3>By T&aacute;v</h3>
+		<h6>Copyright &copy; Jones, Sole Proprietor 2015. All Rights Reserved.</h6>
+		</div>
+
+	    <p>
+		There was once a little girl named Estrella who always like to look up at the stars at night.
+		She never knew what they meant or how to get up there to them but she always imagined
+		and dreamed about them from as far back as she could remember. She used to love saying the
+		poem with her friends on late summer nights, "Twinkle, twinkle little star; how I wonder
+		what you are; up above the world so high; like a diamond in the sky..."
+		</p>
+		<p>
+		 Estrella was from a little city called Llewellynwood where most people didn't pay too
+		 much attention to things like the stars. Most people were concerned with just going
+		 back and forth to work and paying the bills. A lot of people were into church as you'd
+		 expect from a rural southern city.
+		</p>
+		<p>
+		Estrella was different from the rest in that she was always trying to be creative.
+		Despite being beautiful, she saw herself as average and she didn't like to be treated
+		differently or with favoritism on account of her looks. She wanted to start her own
+		business and be known for that but she could never settle on what kind of
+		business.
+		</p>
+		<p>
+		One day she would want to open an art gallery, the next day she'd want to
+		be an author of children's books, and on another day she wanted to be a
+		doctor of horticulture. Whenever she learned something about a new subject that intrigued her,
+		she would want to change the whole direction of her life. One thing for sure about
+		Estrella was that she was always thinking.
+		</p>
+		<p>
+		Estrella's parents were very superstitious people who believed that traditional ways
+		of doing things were key to success and they always encouraged her to stay in school
+		and to "get a regular job" whenever she would talk about wanting to start a new
+		business. They couldn't be shamed. They only knew of one way of being successful.
+		</p>
+		<p>
+		Estrella grew up to be an educator for the state after completing a degree at the local
+		university with the firm support and encouragement from her parents. She was a stunningly beautiful young woman. Most people who saw her had
+		to double-take to be sure she was real. With no make up, she could've modeled for any
+		magazine or fashion group. At the school where she taught, everyone, even females, was
+		always tripping and falling around her. She intimidated most people so she rarely got
+		asked out. She was single but that didn't bother her. Her father always told her,
+		"Don't rush to find love. God has someone special for my baby!"
+		</p>
+		<p>
+		One day, at a local gas station, Estrella saw an interesting looking fellow standing
+		near the entrance. He said in a nice voice, "Hey! How are you?"
+		Estrella didn't talk to strange people. She proceeded into the store as if no one said
+		anything at all.
+		</p>
+		<p>
+		Estrella may not have spoken but she had taken notice of the strange man who greeted her.
+		She thought to herself, "Is he greeting everybody? Is he homeless? Why did he seem so nice?"
+		He could have been homeless but his clothes and hands were a little too clean in
+		Estrella's opinion. She went into the store and bought a few lottery tickets and a
+		strawberry soda. Estrella loved strawberry soda. She also bought 10 dollars worth of gas.
+        </p>
+        <p>
+		As Estrella walked back to her car, she heard the voice call over to her, "Excuse me, miss.
+		Do you have any change you can spare?" She looked back and saw it was the man who greeted
+		her earlier. He was politely smiling with what looked like flyers in his hands. Estrella
+		curved him again.
+		</p>
+		<p>
+		Another person coming out of the store gingerly asked the man, "What do you got today?"
+		</p>
+		<p>
+		The man replied, "I have a grammar for astrology. I'm just asking for a donation of any
+		sort and you can have a copy of it."
+		</p>
+		<p>
+		"Astrology?! I don't believe in that crap. You better get you a regular job," said the person
+		jokingly. "I might check you out a little later if you're still up here."
+		</p>
+		By this time, Estrella was finished pumping her gas.
+		Initially, she felt saved from the man asking her for change but she was now interested
+		in what he had. She didn't know much about astrology but it was one of those things she
+		wished she knew more about. Ever since she first heard of Astrology, she wondered if there was any
+		validity to it but never got around to checking it out. She mentioned it once to her parents
+		and they said it was not of God and therefore not allowed in their home.
+		</p>
+		<p>
+		"Let me see it," called out Estrella to the man who happily brought over a copy of his
+		Astrological Grammar.
+		</p>
+		<p>
+		"Did you make this?" Estrella asked in disbelief. Did a homeless man actually type and
+		print out this document before her? It was very neat and every word was spelled properly
+		that she noticed as she skimmed over it. "How much is it?" She asked to see what he would
+		say.
+		</p>
+		<p>
+		"It's free for a lady as gorgeous as you but I'm asking for a donation of 5 or 10 dollars
+		if you have it. Help support the movement to spread knowledge."
+		</p>
+		<p>
+		Estrella gave the man 20 dollars just because she hated the idea that it was free "for her."
+		The man thanked her much and finally said, "Basic Astrology is man's way of understanding
+		God's method of time-keeping. Contrary to popular belief, astrology is direct communication
+		from God. Get started with the grammar and contact me if you want to know more."
+		</p>
+		<ul>It read:
+		<li>&#9737;: Sun - Identity</li>
+		<li>&#9790;: Moon - Needs</li>
+		<li>&#9791;: Mercury - Communication</li>
+		<li>&#9792;: Venus - Passion</li>
+		<li>&#9794;: Mars - Action</li>
+		<li>&#9795;: Jupiter - Expansion</li>
+		<li>&#9796;: Saturn - Limits</li>
+		<li>&#9797;: Uranus - Technology</li>
+		<li>&#9798;: Neptune - Escapes</li>
+		<li>&#9799;: Pluto - Destruction</li>
+		<li>&#9800;: Aries - Self</li>
+		<li>&#9801;: Taurus - Wealth</li>
+		<li>&#9802;: Gemini - Community</li>
+		<li>&#9803;: Cancer - Parents</li>
+		<li>&#9804;: Leo - Children</li>
+		<li>&#9805;: Virgo - Health</li>
+		<li>&#9806;: Libra - Relationships</li>
+		<li>&#9807;: Scorpio - Death</li>
+		<li>&#9808;: Sagittarius - Journeys</li>
+		<li>&#9809;: Capricorn - Career</li>
+		<li>&#9810;: Aquarius - Friends</li>
+		<li>&#9811;: Pisces - Institutions</li>
+		</ul>
+		<p style="text-align=center;">
+	   <em>To be continued... at http://professor.pythonanywhere.com</em>
+	    </p>
+	  </div>
+        <h1>"Starstruck."</h1>
+        <p>Let us begin this by asserting that every individual regardless of birth should cultivate every aspect of the
+        Zodiac. The Signs should serve as templates for states of mind/being. </p>
+        <div>
+            <p>
+                <h3>Sleep Patterns by Stars</h3>
+♈ Aries: Aries are a hyperactive sign and tend to have sleeping troubles. Their dreams are often intense and vivid, They find it very hard to wind down at night and ignore the health benefits of good sleep. Slide sleeping is known to improve sleep quality <br />
+♉ Taurus: Sleep can be very fitful for Taurus if they are not comfortable. They are especially sensitive to their environment. They tend to sleep long and appreciate bed time. Meaningful dreams. Sleep best in company. <br />
+♊ Gemini: Gemini can survive off a fairly minimal amount of sleep - but it eventually catches up with them. Their minds are always racing in overdrive so sleep never comes easily. Many see sleep as an inconvenience and insomnia as productive 'extra' time <br />
+♋ Cancer: Cancer can have restless sleep patterns because they are likely to suffer nightmares a lot. Bedtime is especially volatile for Cancer because they dwell in all their troubles before sleep. They usually never feel completely 'awake' <br />
+♌ Leo: Most Leo are back sleepers and tend to drift off quite easily; unless they are stressed. They appreciate bed time and like to sleep amongst the most luxurious and sensuous of sheets and linen. Meaningful and precognitive dreams <br />
+♍ Virgo: Virgo cannot sleep if they are stressed or in an environment of disorder. Their chronic habit of overthinking makes it difficult for them to wind down before bed. They function most well when they have obtained a 'sleep schedule' <br />
+♎ Libra: Libra swing between sleeping too much and not enough. They can survive on minimal sleep for a short period then literally spend days in bed. A balanced sleep pattern is a good sign of inner equilibrium for Libra <br />
+♏ Scorpio: Scorpio's sleep is directed by their state of moods. A 'lifted' Scorpio will survive off minimal sleep - pushing bed time back as late as possible as they fall into their concentrated obsessions. An unhappy Scorpio will become very hypersomniac and need a lot of sleep <br />
+♐ Sagittarius: Sagittarius can survive off a minimal sleep arrangement but tend to naturally exhaust themselves through the day. They can put off bed time by becoming too excited or hyper about things at night. Occasionally restless, meaningful dreams <br />
+♑ Capricorn: Capricorn appreciate their sleep and try to get as much as possible - knowing it is within their best interests. A stressed Capricorn will have pronounced sleep troubles - insomnia is a sign of great inner distress for this sign <br />
+♒ Aquarians have pronounced sleep troubles and tend to be restless and uncomfortable in sleep. Their racing thoughts make it hard for them to wind down at night and their use of technology and reading before bed compounds their minimal sleep <br />
+♓ Pisces: Sleep is opium for Pisceans; and out of all the zodiac, they need the most hours. Their receptive nature means they are drained by others and sleep restores their energy reserves. Many never feel truly 'awake'; they tend to have vivid and meaningful dreams
+            </p>
+            <p>
+                <h3>Moods of the Zodiac</h3>
+♈ Aries: Aries feel emotions quite intensely; with their outstanding energy. They have an exaggerated sense of joy and impulse; than an exaggerated sense of rage and impatience. The Arian mood changes often cause random outbursts and impulsive behaviours before the reaction is completely forgotten. Aries are are natural hyper sign. <br />
+♉ Taurus: Taurus is one of the zodiac's most emotionally stable signs. Their moods tend to stay neutralised and consistent. When provoked, Taureans can get defensive, or when experiencing many forms of instability; they may become irritable or even easily enraged. <br />
+♊ Gemini: Gemini experiences mood swings with their 'personality' shifts. The changeable Gemini experiences many different personas in a day, each responding to the world with their own values, mannerisms and mood. The emotional state of a Gemini changes frequently, and they rarely remain in a 'melancholy' or 'introspective' mood for long. Nerves and anxiety are frequent. <br />
+♋ Cancer: Cancerians experience some of the most intense mood swings of the whole zodiac. Being ruled by the Moon, they are at hostage to her lunar cycle and her waxing and waning is the compass for their mood. Cancerians can feel an exaggerated sense of both joy when they have a sense of security, and melancholy; requiring a certain amount of introspection to attunuate. <br />
+♌ Leo: Leo's experience an exaggerated sense of both euphoria and melancholy. Everything in the world of Leo is larger than life and they are prone to random outbursts; with arbitrary triggers. A sense of theatrics in the Leo often leads to dramatic displays of emotion, especially when they are critiqued. Leo are easily frustrated with themselves; thanks to their inner critical voices.
+♍ Virgo: While Virgo may experience fluctuations in mood, it would be rare for them to display it. Instead, the Virgo will repress the emotion, which can manifest in them needing a sense of order, and nerves and anxiety. The innate reflex to worry and their negative inner voices can cause mood changes, irritability and nervous tension
+<br />♎ Libra: Although Libra seeks a lifestyle of tranquility, when they are out of equilibrium their mood swings can be intense. Librans are prone to random outbursts of rage (probably thanks to repressed emotions) and will one day get worked up about something they ignored the day before. A frustrated Libra can be spiteful and vacillating.
+<br />♏ Scorpio: Scorpio experience some of the zodiac's most intense mood swings. Scorpio experiences periods of joyous euphoria and devastating melancholy. When in a low mood, Scorpio is prone to extremely dark thoughts, paranoia and introspection; on the contrary, a happy Scorpio is tremendously loving, curious, energetic and prone to delusions of grandeur.
+<br />♐ Sagittarius: Sagittarius is a naturally energetic sign who tend to experience joy and exhilaration over gloom. They usually surprise themselves with their intense emotions, but would never intend to show them. With all their energy and restlessness, Sagittarius are prone to anxiety, stress and self deception during dark periods
+<br />♑ Capricorn: The Capricorn aura is geared more toward melancholy than any other sign. Although they may have a stoic and calm expression; the inner Capricorn is often racked with nerves, anxiety and an impending sense of doom. Pronounced 'over thinkers'; Capricorn can literally 'think' themselves into a depression
+<br />♒ Aquarius: Aquarius receive the air sign mood volatility; but their moods are so hard to analyse because they are so unpredictable. What sets of a response in Aquarius one day; may not worry them the next. Although detached by nature, Aquarius still have changeable emotions and racing thoughts which can take introspection to attenuate
+<br />♓ Pisces: Pisces experience some of the zodiac's most intense mood swings. Pisceans are vulnerable to a both exaggerated sense of joy and melancholy. People born under this sign are also susceptible to nerves and anxiety thanks to their inner critic. The external moods, vibrations and whims of others is also absorbed by the Piscean; who may experience emotions that are not even theirs.
+
+            </p>
+            <p>
+                <h3>Psychological Ailments by Zodiac</h3>
+♈ Aries: Nerves, hyperactivity, impulsivity, racing thoughts, insomnia, black and white thinking<br />
+♉ Taurus: Compulsivity, immoderation, hypersonmnia<br />
+♊ Gemini: Nerves, insomnia, unstable sense of self, emotional lability, racing/noisy thoughts, dissociation<br />
+♋ Cancer: Emotional Instability, co-dependency, violent mood swings, affect lability<br />
+♌ Leo: Histrionic tendencies, hyperactivity, negative voices, hysteria<br />
+♍ Virgo: Nerves, anxiety, racing thoughts, obsessive compulsive tendencies<br />
+♎ Libra: Co-dependency, anxiety, unstable sense of self, negative voices, hyperactivity/hypersomnia<br />
+♏ Scorpio: Emotional instability, violent mood swings, delusions of grandeur, self isolation, black and white thinking<br />
+♐ Sagittarius: Hyperactivity, noisy/racing thoughts, impulsivity, compulsivity<br />
+♑ Capricorn: Depressive thoughts, schizoid tendencies, compulsivity<br />
+♒ Aquarius: Dissociation, insomnia, noisy/racing thoughts, anxiety, schizoid tendencies<br />
+♓ Pisces: Distractibility, emotional instability, violent mood swings, unstable sense of self<br />
+            </p>
+        </div>
+<div class="aside">
+	    <a href="">About Trapped</a>
+		<p>The <abbr title="Mystic Door Openers">MDO</abbr> was founded in 2000.</p>
+	  </div>
+	    <div class="story">
+	    <div class="header">
+	    <h1> <span class="tightle">"Trapped."</span> </h1>
+		<img src={{url_for("static", filename="visuals/Nathan.jpg")}} class="Nathan"/>
+		<h3>By T&aacute;v</h3>
+		<h6>Copyright &copy; Jones, Sole Proprietor 2015. All Rights Reserved.</h6>
+		</div>
+
+	    <p>
+		Once upon a time, around the year 2017, there lived a man named Nathan.
+		He was about 39 years old but he appeared to be around 26 to most people who guessed.
+		He lived in the Protectorate of Akhembalu situated in place of what used to be called Atlanta
+		and he was its Protector.
+		</p>
+		<p>
+		One might say that Nathan lived like a king or even an emperor but
+		they would not know his complete story. To be as frank as possible, Nathan came from nothing.
+		His family, as he was growing up, was completely dysfunctional.
+		</p>
+		<p>
+		His parents were never actually married.
+		They once almost married when Nathan was four years old but just before the wedding
+		Nathan's father's best man was murdered which sent Nathan's father on a frenzied downward spiral of depression
+		and vengeance from which he never fully recovered. The wedding was called off because Nathan's father went missing.
+		When he finally showed back up about a week later, Nathan's father was covered in a bloodied, torn tuxedo and
+		was never the same again. No one dared say anything to him about it.
+		It goes without saying that Nathan basically lost his father at the age of four.
+		</p>
+		<p>
+		His father used to be a successful drug-dealer. He became a dead beat alcoholic, drug-abuser and petty thief after the murder
+		of his best man. Some say he became a hit man only he never accepted payment for his hits. He was
+        known to go on and on about duty and responsibility and how "if I do this for money, then I'm not doing it for Z-Vak! Blood is thicker
+		than money!" He was never not drunk or not on some drug.
+        </p>
+        <p>
+		Nathan's mother used to be a singer. She was well known in Atlanta for a hit song. She was warned long
+		ago by her own mother that her choice of a man would make or break her. Nathan's mother hated her
+		own mother because she was "always talking about how I think I'm all that and how I never do this right or never do that right!"
+		Nathan's grandmother was a stern woman and her belief in the old ways never wavered one tittle even until her death.
+		Nathan's mother was haunted by the nagging of own mother and developed the "I don't need nobody" attitude because of it.
+		When Nathan's father dropped into depression, Nathan's grandmother's prophecy came true which
+		triggered her into an even more isolated state of mind. When bills were due and Nathan's father had nothing,
+		out of pure pride ironically, Nathan's mother, being a stunningly gorgeous woman, began taking up
+		on the offers of the flocks of admirers willing to pay her bills for sexual favors and attention.
+		</p>
+		<p>
+		Around the age of 11, Nathan, being a very precocious boy ran away from his dysfunctional home in search
+		of something better. Little did he know that the world had a wide variety of things to offer, many of them
+		far worse than his family had. He had heard in school about Africa and decided that he wanted to go there
+		because naively he thought "I won't to have worry about it getting cold at night if I go to Africa.
+		Any place is better than here."
+		</p>
+		<p>
+		Nathan left behind nearly everyone and everything. He left behind his twin brother Ethan.
+		He left his parents. He left his friends from grammar school. He left his favorite books and games.
+		</p>
+		<p>
+		It must be said that Nathan did plan his runaway rather well for an eleven year old.
+		He packed his backpack with a change of clothes, one of his favorite books,
+        a well folded bed sheet and a bag of trail mix he found in the kitchen. He even packed a toothbrush,
+		a wash cloth and soap! He also stole one of his fathers knives to keep with him for protection. Nathan was
+        young and disturbed but he was never stupid! He was a serious as his father and as prideful as his mother
+		while just as stern as his grandmother. His unique quality was that he never said much along the lines
+        of what he was actually thinking. Whenever he made a move, no one ever could have guessed it.
+		</p>
+		<p>
+		 To be continued...
+		</p>
+	  </div>
+
+    </body>
+{% endblock content %}

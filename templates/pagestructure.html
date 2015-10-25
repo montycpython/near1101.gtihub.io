@@ -1,0 +1,202 @@
+{% extends "mijnhuis.html" %}
+{% block title %}Gift Shop{% endblock title  %}
+{% block head %}
+    {{ super() }}
+<head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    .nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('http://goo.gl/04j7Nn');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.neighborhood-guides {
+  background-color: #efefef;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.neighborhood-guides h2 {
+  color: #393c3d;
+  font-size: 24px;
+}
+
+.neighborhood-guides p {
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+    </style>
+  </head>
+{% endblock head %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="#">Name</a></li>
+          <li><a href="#">Browse</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>7 Real Arts Gift Shop.</h1>
+        <p>Buy your training supplies, required reading materials, and other ordinary gifts and products.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="neighborhood-guides">
+      <div class="container">
+        <h2>{% for message in get_flashed_messages() %}
+{{ message }}
+{% endfor %}</h2>
+        <p>
+      Not sure what to buy? We've created product guides for visitors of all types.
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://goo.gl/0sX3jq" >
+            </div>
+            <div class="thumbnail">
+              <img src="http://goo.gl/an2HXY" >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://goo.gl/Av1pac" >
+            </div>
+            <div class="thumbnail">
+              <img src="http://goo.gl/vw43v1" >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://goo.gl/0Kd7UO" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--
+app.config(['$interpolateProvider', function($interpolateProvider) {
+  $interpolateProvider.startSymbol('{[');
+  $interpolateProvider.endSymbol(']}');
+}]);-->
+
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>7 Real Art's Intellect Training</h3>
+			<p>There are many ways to become an intellectual. This is one. A seven-part "pythonic" one.</p>
+			<p><a href="#">Enter the First Training Hall now.</a></p>
+	      </div>
+<!--
+musical–rhythmic, visual–spatial, verbal–linguistic, logical–mathematical, bodily–kinesthetic, interpersonal, intrapersonal, naturalistic, existential, moral, g factor
+-->
+		  <div class="col-md-4">
+			<h3>Gifts For Anyone</h3>
+			<p>Quality clothes, hats, music, movies, scents and more.</p>
+			<p><a href="#">Stroll through our gifts or like some.</a></p>
+			<!--
+    Police Marshal (the highest ranking law enforcement official within a country)
+    Sheriff (the highest ranking law enforcement official within a county)
+    Chief of Police, Undersheriff
+    Police Commissioner
+    Deputy Commissioner
+    Deputy Chief
+    Assistant Chief
+    Brigadier
+    Commander
+    Colonel
+    Lieutenant Colonel
+    Major
+    Captain
+    Lieutenant
+    Sergeant Major
+    First Sergeant
+    Master Sergeant
+    Sergeant First Class
+    Staff Sergeant
+    Sergeant
+    Master Trooper
+    Inspector
+    Corporal Grade 1
+    Police Corporal
+    Trooper First Class
+    Police Officer/Trooper/Patrol Officer
+    Negro Y Haplotype E1B1A
+			-->
+		  </div>
+		  <div class="col-md-4">
+			<h3>Fine Art</h3>
+			<p>From verified artists to affluent clients, we've got your back.</p>
+			<!--https://www.artbrokerage.com/-->
+			<p><a href="#">Learn more about trust with 7 Arts Brokerage.</a></p>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+  </body>
+</html>
+{% endblock content %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h3>People who graduated the Trivium:</h3>
+{% for person in persons %}
+<strong>Name:</strong> {{ person.name.title() }}<br />
+<strong>Gender:</strong> {{ person.gender }}<br /><br />
+{% endfor %}
+    <p>
+        I possess total mastery over the following subjects:<br />
+        <ul>
+            <li>Expression/Art</li>
+            <li>Numbers/Mathematics</li>
+            <li>Time/Astrology</li>
+            <li>American/English</li>
+            <li>Dutch/German</li>
+            <li>French/Spanish</li>
+            <li>Hebrew/Arabic</li>
+            <li>Greek/Russian</li>
+            <li>Japanese/Chinese</li>
+            <li>Igbo/Yoruba</li>
+            <li>Medu Neter/Sumerian</li>
+            <li>Science/Chemistry</li>
+            <li>Physics/Metaphysics</li>
+            <li>Logic/Reasoning</li>
+            <li>The Bourne Again Shell</li>
+            <li>C/C++</li>
+            <li>Python 2.7 and 3.4</li>
+            <li>IP/FTP/HTTP</li>
+            <li>HTML/CSS/JavaScript</li>
+            <li>Java</li>
+        </ul>
+    </p>
+</body>
+
+</html>

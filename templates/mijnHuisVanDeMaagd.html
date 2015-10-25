@@ -1,0 +1,344 @@
+{% extends "mijnhuis.html" %}
+{% block title %}Programming{% endblock title %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+    dt {color: green;}
+  </style>
+{% endblock head %}
+{% block content %}
+<center><h1><span style="text-decoration:underline;">De Huis van Tekst by <font color="blue">Mont&#225;vious</font></span></h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Current Date and Time</button>
+    <p id="demo"class="important"></p>
+
+    <h2>32 Points of Interest for Computer/Web Programming:</h2></center>
+    <p class="important">
+        <dl>
+            <h4>Computer Science</h4>
+            <dt class="computersci">data structures</dt>
+              <dd>The difference between an array and a list?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>algorithms</dt>
+              <dd>The average of numbers in an array?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>systems programming</dt>
+              <dd>What's a compiler, linker, interpreter?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <h4>Software Engineering</h4>
+            <dt class="softwareeng">source code version control</dt>
+              <dd>Folder backups by date?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>build automation</dt>
+              <dd>Know how to build from IDE?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>automated testing</dt>
+              <dd>Is all testing the job of the tester?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <h4>Programming</h4>
+            <dt class="programming">problem decomposition</dt>
+              <dd>Only straight line code and copy-paste for reuse?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>systems decomposition</dt>
+              <dd>Able to think above the level of a single file/class?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>communication</dt>
+              <dd>Can express thoughts to peers? Good grammar and spelling?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>code organization within a file</dt>
+              <dd>Evidence of organization within file?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>code organization across files</dt>
+              <dd>Thought given to organizing of code across files?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>source tree organization</dt>
+              <dd>Everything in one folder?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>code readability</dt>
+              <dd>Mono-syllable names?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>defensive coding</dt>
+              <dd>Understand the concept?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>error handling</dt>
+              <dd>Codes only the happy case?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>IDE</dt>
+              <dd>Mostly uses IDE for text editing?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>API</dt>
+              <dd>Need to look up the documentation a lot?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>frameworks</dt>
+              <dd>Has used any framework outside of core platform?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>requirements</dt>
+              <dd>Takes the given requirements and codes to specs?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>scripting</dt>
+              <dd>Knowledge of scripting tools?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>database</dt>
+              <dd>Think that Excel is a database?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <h4>Experience</h4>
+            <dt class="experience">languages with professional experience</dt>
+              <dd>Imperative or object-oriented?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>platforms with professional experience</dt>
+              <dd>One</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>years of professional experience</dt>
+              <dd>One</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>domain knowledge</dt>
+              <dd>Knowledge of the domain?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <h4>Knowledge</h4>
+            <dt class="knowledge">tool knowledge</dt>
+              <dd>Limited to primary IDE?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>languages exposed to</dt>
+              <dd>Imperative or object-oriented?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>codebase knowledge</dt>
+              <dd>Have you ever looked at the codebase?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>knowledge of upcoming technologies</dt>
+              <dd>Any knowledge of upcoming technologies?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>platform internals</dt>
+              <dd>Any knowledge of platform internals?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>books</dt>
+              <dd>Dummies series?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+            <dt>blogs</dt>
+              <dd>Had time for any good blogs?</dd>
+                <dd></dd>
+                  <dd></dd>
+                    <dd></dd>
+        </dl>
+        Based on the <a href="http://sijinjoseph.com/programmer-competency-matrix/">"Programmer Competency Matrix"</a> by Sijin Joseph
+    </p>
+
+<p>
+    <h2>Notes from <a href="https://www.youtube.com/watch?v=9uq3w6JJS00">Zero to Hero with Python (Code Geek):</a></h2>
+    <ol> Hosts' Twitter Handles: @geektrainer, @HockeyGeekGirl ('0x29' years old? -- Even that means she began coding at age 1) <br /> Day One
+        <li>Getting Started</li>
+        <li>Displaying Text</li>
+        <li>String Variables</li>
+        <li>Storing Numbers</li>
+        <li>Working with Dates and Time</li>
+        <li>Making Decisions with Code</li>
+        <li>Complex Decisions with Code</li>
+        <br/>Day 2
+        <li>Repeating events</li>
+        <li>Repeating events until done</li>
+        <li>Remembering list</li>
+        <li>How to save information in files</li>
+        <li>Reading from files</li>
+        <li>Function</li>
+        <li>Handling errors</li>
+    </ol>
+</p>
+
+<p>
+    <h2>Notes from <a href="https://www.youtube.com/watch?v=--_SqSC9A1A">Creating Websites with Flask and Python</a> as a server side technology.</h2>
+</p>
+<p>
+<code>
+htmlelements = [!--
+, !DOCTYPE
+, a
+, abbr
+, acronym
+, address
+, applet
+, area
+, article
+, aside
+, audio
+, b
+, base
+, basefont
+, bdi
+, bdo
+, big
+, blockquote
+, body
+, br
+, button
+, canvas
+, caption
+, center
+, cite
+, code
+, col
+, colgroup
+, datalist
+, dd
+, del
+, details
+, dfn
+, dialog
+, dir
+, div
+, dl
+, dt
+, em
+, embed
+, fieldset
+, figcaption
+, figure
+, font
+, footer
+, form
+, frame
+, frameset
+, h1 - h6
+, head
+, header
+, hr
+, html
+, i
+, iframe
+, img
+, input
+, ins
+, kbd
+, keygen
+, label
+, legend
+, li
+, link
+, main
+, map
+, mark
+, menu
+, menuitem
+, meta
+, meter
+, nav
+, noframes
+, noscript
+, object
+, ol
+, optgroup
+, option
+, output
+, p
+, param
+, pre
+, progress
+, q
+, rp
+, rt
+, ruby
+, s
+, samp
+, script
+, section
+, select
+, small
+, source
+, span
+, strike
+, strong
+, style
+, sub
+, summary
+, sup
+, table
+, tbody
+, td
+, textarea
+, tfoot
+, th
+, thead
+, time
+, title
+, tr
+, track
+, tt
+, u
+, ul
+, var
+, video
+, wbr]
+</code>
+</p>
+
+<center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9DN33W3UJFLG6">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center>
+
+    </p>
+{% endblock content %}

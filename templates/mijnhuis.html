@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='mijnhuis.css') }}">
+    <title>{% block title %}{% endblock title %} - 7 Real Arts</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="description" content="Free English tutorials">
+    <meta name="keywords" content="English, Language, Speech, Grammar, Atlanta, Tutor, Syntax">
+    <meta name="author" content="Montavious Jones">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 20px 50px 150px;
+  font-size: 13px;
+  text-align: center;
+  background: rgb(153, 204, 0);
+}
+
+nav > ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+nav > ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+nav > ul li:hover {
+  background: #555;
+  color: #fff;
+}
+nav > ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+nav > ul li ul li {
+  background: #555;
+  display: block;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+nav > ul li ul li:hover { background: #666; }
+nav > ul li:hover ul {
+  display: block;
+  opacity: 1;
+
+  visibility: visible;
+}
+a {color:red;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;
+    color:orange;
+    background-color:purple;
+}
+a:active {text-decoration:underline;}
+ul {list-style-type:circle;}
+.Courses {
+-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px red;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px red;}
+}
+* {
+margin:0;
+padding:0;
+font-family:"Courier New",Helvetica Neue", Helvetica, Sans-serif;
+word-spacing:-2px;
+}
+
+h1 {
+  font-size:40px;
+  font-weight:bold;
+  color:#191919;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-weight:normal;
+  font-size:20px;
+  color:#888;
+  padding:5px 0;
+}
+
+.message {
+background:#181819;
+color:#FFF;
+position: absolute;
+top: -200%;
+left: 0;
+width: 100%;
+height: 200%;
+padding: 20px;
+transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+overflow: hidden;
+box-sizing: border-box;
+
+}
+
+.message h1 {
+  color:#FFF;
+}
+
+#toggle {
+  position:absolute;
+  appearance:none;
+  cursor:pointer;
+  left:-100%;
+  top:-100%;
+}
+
+#toggle + label {
+position:absolute;
+cursor:pointer;
+padding:10px;
+background: #26ae90;
+width: 100px;
+border-radius: 3px;
+padding: 8px 10px;
+color: #FFF;
+line-height:20px;
+font-size:12px;
+text-align:center;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;
+margin:20px 50px;
+transition:all 500ms ease;
+}
+#toggle + label:after {
+  content:"Open"
+}
+
+.container {
+transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  padding:5em 3em;
+}
+
+#toggle:checked ~ .message {
+  top: 0;
+}
+
+#toggle:checked ~ .container {
+  margin-top: 250px;
+}
+
+#toggle:checked + label {
+  background:#dd6149;
+}
+
+#toggle:checked + label:after {
+  content:"Close"
+}
+</style>
+{% endblock head %}
+{% block body %}
+
+<center>
+
+
+If you're reading this, you're right on time.
+
+
+</center>
+
+<center>
+<h1><span style="text-decoration:underline;">The 7 Real Arts of <font color="blue"> Professor Jones</font></span></h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"><img src="http://upload.wikimedia.org/wikipedia/commons/b/ba/Lunar_libration_with_phase_Oct_2007_450px.gif" width="160em" /></button>
+    <p id="demo"class="important"></p>
+</center>
+
+    <center>
+        <h2 class="Courses"><a href="{{url_for('dueropening')}}">Curriculum:</a></h2>
+    <nav>
+    <ul>
+        <li>The Trivium
+            <ul>
+            <li><a href="{{url_for('attic')}}">1. Grammar</a></li>
+            <li><a href="{{url_for('bathroom')}}">2. Logic</a></li>
+            <li><a href="{{url_for('bedroom')}}">3. Rhetoric</a></li>
+            </ul>
+        </li>
+<span id="plus">&nbsp; + &nbsp; </span>
+        <li>The Quadrivium
+            <ul>
+            <li><a href="{{url_for('storage_room')}}">4. Arithmetic</a></li>
+            <li><a href="{{url_for('dining_room')}}">5. Geometry</a></li>
+            <!--li><a href="http://realhistoryww.com">History</a></li>
+            <li><a href="{{url_for('basement')}}">Computer/Web Programming</a>
+            <code>$ python3 </code></li>
+            <li><a href="http://siderealist.com/femi.html">Astrology</a></li>
+            <li><a href="{{url_for('garage')}}">Zodiac Calendar</a></li>
+            <li><a href="http://python-future.org/compatible_idioms.html">Python2/3 "Guido-lines"</a></li>
+            <li><a href="{{url_for('nursery')}}">Breaking The English Spell</a></li-->
+            <li><a href="{{url_for('den')}}">6. Music</a></li>
+            <li><a href="{{url_for('kitchen')}}">7. Astronomy</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    </center>
+    <hr />
+    <h2>Facts:</h2>
+    <div id="content">
+{% block content %}
+
+
+{% endblock content %}
+    </div>
+    <p class="important"><strong><font color="blue">If</font></strong> you want to make a contribution to this site, please donate.
+    We sincerely appreciate your support.</p>
+<center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9DN33W3UJFLG6">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="2" height="2">
+</form>
+</center>
+
+    <div id="footer">
+{% block footer %}
+      &copy; Copyright 2015 by <a href="https://www.codecademy.com/nearnow"><font color="red">Jones, Sole Proprietor</font></a>.
+{% endblock footer %}
+    </div>
+<!--<p>Various Subjects for which Programs are being Developed:</p></center>
+    <center>
+    <ul>
+        <li>Deductive Reasoning: The Toolbox</li><li>English Language: Mastery</li><li>Mathematics</li><li>Rhetoric</li>
+        <li>Logic</li><li>Web Programming</li><li>Genetics</li>
+        <li>Memory Techniques</li><li>Science</li><li>Hypnosis</li>
+        <li>Health</li><li>Latin Language</li><li>Greek Language</li>
+        <li>Yoruba Language</li><li>Dutch Language</li><li>French Language</li>
+        <li>Kiswahili Language</li><li>Latin Language</li><li>Arabic Language</li>
+        <li>The Qu'ran</li><li>Chemistry</li><li>Nobel Prize Literature</li>
+        <li>The Artist's Way</li><li>The Craft of Research</li><li>HTML5</li>
+        <li>Ancient Egypt</li><li>Divination</li><li>Astrology</li>
+        <li>History of California</li><li>Colonial Georgia</li>
+        <li>Art of Persuasion</li><li>The Souls of Black Folk</li><li>Hebrew Language</li>
+        <li>The Black Struggle for Freedom in America</li><li>The Holy Bible</li><li>Buddhism</li>
+        <li>Computer Programming</li><li>Fitness Training</li><li>Musicology</li>
+        <li>Ritual</li><li>Symbology</li><li>Poetry</li>
+        <li>Editing Fiction</li><li>Writing</li><li>Cursive</li>
+        <li>Calligraphy</li><li>Shorthand</li><li>Business Law</li>
+        <li>Habits of Highly Effective People</li><li>Siddur Sim Shalom</li><li>Natural Cures</li>
+        <li>Psychology</li><li>Child Psychology</li><li>Female Psychology</li>
+        <li>Male Psychology</li><li>Pioneers of Science and Invention</li><li>Origami</li>
+        <li>Auto Repair</li><li>Pseudoscience</li><li>Extra-Sensory Perception</li>
+        <li>Mythology</li><li>Intimacy</li><li>Common Sense</li>
+        <li>Game Theory</li><li>The Economy of The Future</li><li>Power in General</li>
+        <li>Civil Procedure</li>
+    </ul>
+    </center>-->
+{% endblock body %}
+</html>

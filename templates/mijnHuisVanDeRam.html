@@ -1,0 +1,104 @@
+{% extends "mijnhuis.html" %}
+{% block title %}Reality{% endblock title %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<style type="text/css">
+/* jinja2 docs: http://jinja.pocoo.org/docs/dev/templates/#template-inheritance */
+.important { color: #336699; }
+a:visited { text-decoration: none; }
+a:link { text-decoration: none;
+         color:red;}
+.Boss {
+-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px red;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px red;}
+}
+body {
+    background: HoneyDew;
+}
+
+.ad {float: right;}
+  </style>
+{% endblock head %}
+{% block content %}
+{% for message in get_flashed_messages() %}
+    {{ message }}
+{% endfor %}
+    <p style="font-family: Courier New;">
+        <strong>
+        Here at the Real Arts of Professor Jones, we develop intellect by way of art.
+        Our various arts are divided into two sections: the Trivium (verbal arts), and the
+        Quadrivium (numerical arts).
+        <br /><br />
+        Just what is intellect, you ask? Well, if we were being true to the American English
+        language, all you'd need is a proper dictionary to look it up. Intellect is a noun
+        meaning one's ability to know as different from one's feelings or one's will.
+        We will make it very clear to you that grammar is the root of all learning because at
+        it's fundamental level, grammar is simply information about information.
+        <strong>... It's better to know something than to feel something or will something ...</strong>
+        <a href="{{ url_for('attic') }}">Proceed to the Hall of Grammar to continue.</a>
+        <br /><br />
+    Current promotions as of October 2015:<br />
+    For less than 30 dollars,
+    <a href="http://535dbf26t635xi4gsusbu9hh4m.hop.clickbank.net/?tid=MOVIES101" target="_top">
+    get access The Only Legal & Real Unlimited Movie Downloads Site since 2008.</a>
+    <!--http://denisdutton.com/tolstoy.htm--><br /><br />
+    If you're reading this and want to get paid for your opinion,
+    <a href="http://8e319ix9u0xbxotqz-p49qes80.hop.clickbank.net/?tid=EMPLOYMENT101" target="_top"> click here to get started.</a>
+    <br /><br />
+    If you're reading this and are a student who is serious about making part-time income by taking surveys,
+    <a href="http://2d2e6fy4w8292q0ftgsh6h2a5c.hop.clickbank.net/?tid=EMPLOYMENT102" target="_top"> click here to begin.</a>
+    <br /><br />
+    If you're interested in cars or getting a free car,
+    <a href="http://d0308hq-165-uhup8ucufoasc0.hop.clickbank.net/?tid=CARS102" target="_top"> you may want to click here.</a>
+    <br /><br />
+    Finally, if you're reading this and are a business owner who would like to have your business promoted,
+    consider becoming a sponsor. Sign up to access the Quadrivium, and at the end story #7 will be more on becoming an official sponsor.
+    </p>
+<hr />
+{% for message in get_flashed_messages() %}
+    <h2>{{ message }}</h2>
+{% endfor %}
+{% if error %}
+<p class="error"><strong>Error:</strong> {{ error | safe }}</p>
+{% endif %}
+<div class="container">
+    <h1>Sign Up</h1>
+    <form action="" method="post">
+        <select name="title">
+    {% for key, value in gendertitles.items() %}
+        <option value="{{ key }}"
+        {% if (key == target) %} selected="selected"
+        {% endif %}>
+        {{ value }}
+        </option>
+    {% endfor %}
+</select>
+        <input type="text" placeholder="Username" name="username" value="{{ request.form.username }}" required pattern=".{6,}" />
+        <input type="email" placeholder="yourname@email.com" name="email" value="{{ request.form.email }}" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" />
+        <input type="password" placeholder="Password" name="password" value="{{ request.form.password }}" required pattern=".{6,}" />
+        <input type="password" placeholder="Confirm Password" name="passwordcheck" value="{{ request.form.passwordcheck }}"required pattern=".{6,}" />
+        <input class="btn btn-default" type="submit" value="Sign Up" />
+    </form>
+</div>
+
+
+<!--<center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9DN33W3UJFLG6">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="2" height="2">
+</form>
+</center>-->
+{% endblock content %}

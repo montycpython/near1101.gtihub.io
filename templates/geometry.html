@@ -1,0 +1,51 @@
+{% extends "mijnhuis.html" %}
+{% block title %}Real Geometry{% endblock title  %}
+{% block head %}
+    {{ super() }}
+<style type="text/css">
+.important {
+    color: #336699;
+}
+
+body {
+    background: rgb(255, 102, 0);
+}
+div {
+	display: inline-block;
+	margin-left: 5px;
+	border-radius:100%;
+	height:100px;
+	width:100px;
+	border:solid black 2px;
+}
+.friend {border:dashed 2px #008000;}
+.family {border:dashed 2px #0000FF;}
+.enemy {border:dashed 2px #FF0000;}
+#best_friend {border:4px solid #00C957;}
+#archnemesis {border:4px solid #CC0000;}
+</style>
+{% endblock head %}
+{% block content %}
+<p> Click <a href="/portiek">Here</a> to Log Out</p>
+        <div class="family"></div>
+		<div class="family"></div>
+		<div class="friend" id="best_friend"></div>
+		<div class="enemy" id="archnemesis"></div>
+		<div class="friend"></div>
+		<div class="enemy"></div>
+<pre>
+Geometry is Arithmetic over space.
+</pre><a href="http://54295ez73223vhzqqfq2yang61.hop.clickbank.net/?tid=CARS101" target="_top">Click Here to order a VIN report!</a>
+<canvas id="geo" width="300" height="300">If you're reading this, it's too late.</canvas>
+<script>
+
+        var paper = document.getElementById("geo"),
+            c = paper.getContext("2d");
+        c.fillStyle = "black";
+        c.fillRect(0,0,paper.width, paper.height);
+        c.stroke();
+</script>
+
+<br />
+
+{% endblock content %}
